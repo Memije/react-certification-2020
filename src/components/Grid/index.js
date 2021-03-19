@@ -1,9 +1,8 @@
 import React from "react";
 
 import Card from "../Card";
-import data from "../../mock/youtube-videos-mock";
 
-const Grid = () => {
+const Grid = ({ data }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6">
       {data.items.map(({ id, snippet: { title, description, thumbnails } }) => (

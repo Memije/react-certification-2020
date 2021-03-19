@@ -3,11 +3,13 @@ import React from "react";
 import Grid from "../Grid";
 import Header from "../Header";
 
+import data from "../../mock/youtube-videos-mock";
+
 const Layout = () => {
   return (
     <div>
       <Header />
-      <Grid />
+      <Grid data={data} />
     </div>
   );
 };
