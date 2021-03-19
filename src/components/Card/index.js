@@ -23,6 +23,7 @@ const CardImage = styled.img`
 const CardContent = styled.div`
   padding: 2rem;
   text-align: left;
+  min-height: 12rem;
 `;
 
 // Title of the card
@@ -44,13 +45,17 @@ const CardDescription = styled.p`
   font-size: 0.95rem;
 `;
 
-const VideoCard = ({ title, description, imageURL, videoId }) => {
+const Card = ({ title, description, imageURL, itemKind, itemId }) => {
   return (
     <CardContainer>
       <CardImage src={imageURL} />
       <CardContent>
         <CardTitle
-          href={`https://youtube.com/watch?v=${videoId}`}
+          href={
+            itemKind === "youtube#video"
+              ? `https://youtube.com/watch?v=${itemId}`
+              : `https://youtube.com/channel/${itemId}`
+          }
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -62,4 +67,4 @@ const VideoCard = ({ title, description, imageURL, videoId }) => {
   );
 };
 
-export default VideoCard;
+export default Card;

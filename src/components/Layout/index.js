@@ -1,13 +1,13 @@
 import React from "react";
 
-import VideoGrid from "../VideoGrid";
+import Grid from "../Grid";
 import Header from "../Header";
 
 const Layout = () => {
   return (
     <div>
       <Header />
-      <VideoGrid />
+      <Grid />
     </div>
   );
 };
