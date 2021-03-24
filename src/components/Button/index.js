@@ -6,16 +6,16 @@ const Button = styled.button`
   padding: 0.25em 1em;
   border-radius: 3px;
 
-  background: ${(props) => (props.primary ? "#ff2e63" : "transparent")};
-  color: ${(props) => (props.primary ? "white" : "#ff2e63")};
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.foreground};
 
   &.clear {
     background: transparent;
-    color: white;
+    color: ${(props) => props.theme.foreground};
   }
 
   &.bordered {
-    border: 2px solid #ff2e63;
+    border: 2px solid ${(props) => props.theme.background};
   }
 
   &.round {

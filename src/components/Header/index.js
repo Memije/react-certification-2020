@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Input from "../Input";
 import { Button } from "../Button";
+import colors, { primary } from "../../theme";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMoon } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +17,8 @@ const HeaderContainer = styled.div`
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom-width: 2px;
-  background-color: #252a34;
+  background-color: ${colors.black};
+  color: ${colors.white};
   align-items: center;
 `;
 
@@ -55,7 +57,7 @@ const Header = () => {
         <Button className="clear">
           <FontAwesomeIcon icon={faMoon} />
         </Button>
-        <Button primary>Log In</Button>
+        <Button theme={primary}>Log In</Button>
       </HeaderActions>
     </HeaderContainer>
   );

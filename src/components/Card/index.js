@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
+import colors from "../../theme";
+
 // Container for card contents
 const CardContainer = styled.div`
   border-radius: 0.75rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 28rem;
   margin-left: auto;
@@ -41,7 +42,7 @@ const CardTitle = styled.a`
 // Description for the card
 const CardDescription = styled.p`
   margin-top: 0.5rem;
-  color: #6b7280;
+  color: ${colors.gray};
   font-size: 0.95rem;
 `;
 
