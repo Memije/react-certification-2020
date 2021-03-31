@@ -16,7 +16,6 @@ const HeaderContainer = styled.div`
   margin-bottom: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom-width: 2px;
   background-color: ${colors.black};
   color: ${colors.white};
   align-items: center;
@@ -32,7 +31,6 @@ const HeaderHamburger = styled.div`
 const HeaderSearchBar = styled.div`
   width: 48rem;
   height: 2rem;
-  display: flex;
 `;
 
 const HeaderActions = styled.div`
@@ -50,7 +48,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} />
         </Button>
       </HeaderHamburger>
-      <HeaderSearchBar>
+      <HeaderSearchBar className="hidden lg:flex lg:flex-row">
         <Input placeholder="Search something..." />
       </HeaderSearchBar>
       <HeaderActions>
