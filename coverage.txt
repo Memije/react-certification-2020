@@ -1,0 +1,27 @@
+
+> react-certification-2020@0.1.0 test
+> craco test "--coverage" "--watchAll=false"
+
+-------------------------|---------|----------|---------|---------|-------------------
+File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------|---------|----------|---------|---------|-------------------
+All files                |   70.59 |    71.43 |      80 |   70.59 |                   
+ src                     |    9.09 |        0 |   33.33 |    9.09 |                   
+  App.js                 |     100 |      100 |     100 |     100 |                   
+  index.js               |       0 |      100 |     100 |       0 | 7-17              
+  reportWebVitals.js     |       0 |        0 |       0 |       0 | 1-8               
+ src/components/Button   |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/components/Card     |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/components/Grid     |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/components/Header   |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/components/Input    |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/components/Layout   |     100 |      100 |     100 |     100 |                   
+  index.js               |     100 |      100 |     100 |     100 |                   
+ src/mock                |     100 |      100 |     100 |     100 |                   
+  youtube-videos-mock.js |     100 |      100 |     100 |     100 |                   
+-------------------------|---------|----------|---------|---------|-------------------
